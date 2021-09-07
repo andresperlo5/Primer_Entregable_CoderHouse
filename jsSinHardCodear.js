@@ -16,16 +16,15 @@ class Usuario {
 
     addMascota() {
 
-        if (this.mascotas !== (undefined, null, '')) {
-
+       
             let animales = prompt('Agregar mas Animales')
 
-            while (animales !== (undefined, null, '')) {
+            while (animales !== null) {
 
                 this.mascotas.push(animales)
                 animales = prompt('Agregar mas Animales')
             }
-        }
+        
     }
 
     countMascotas() {
